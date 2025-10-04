@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Basis Data - UBP Karawang</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe6f9, #f3e5f5);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #d63384, #6f42c1);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 
+        2px 2px 0 #ff0095,
+        -2px -2px 0 #a64ca6,
+        2px -2px 0 #a64ca6,
+        -2px  2px 0 #d63384;
+    }
+
+
+    nav {
+      background: #f8bbd0;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: #6f42c1;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d63384;
+      text-shadow: 0px 0px 8px rgba(214, 51, 132, 0.6);
+    }
+
+    .hero {text-align: center;margin-top: 20px;}
+    .hero iframe {width: 100%;
+      max-width: 720px;
+      height: 405px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: var(--card-shadow);
+    }
+    .container {
+      max-width: 900px;
+      margin: 25px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 18px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #d63384;
+      border-left: 5px solid #6f42c1;
+      padding-left: 10px;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    pre {
+      background: #f3e5f5;
+      padding: 10px;
+      border-radius: 10px;
+      overflow-x: auto;
+      color: #6f42c1;
+      font-weight: bold;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #6f42c1, #d63384);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    footer a {
+      color: #ffe6f9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨Blog Basis Data✨</h1>
+    <div style="background: transparent;">
+  <img src="image1.png" alt="Foto" style="text-align: center; background: transparent; max-width: 700px;">
+</div>
+    <p><u>🌸Nama : Tasya Dwi Cahyani</u></p>
+    <p><u>🌷NIM : 24416255201252</u></p>
+    <p><u>💐if24.tasyacahyani@mhs.ubpkarawang.ac.id</u></p>
+    <p>🍒UBP Karawang🍒</p>
+  </header>
+
+  <nav>
+    <a href="#post1"></a>
+    <a href="#post2"></a>
+    <a href="#post3"></a>
+    <a href="#post4"></a>
+  </nav>
+
+    <div class="hero">
+        <iframe src="https://youtu.be/tM28WXQocxU?si=3sr1u7TeVmQ1inbX" 
+      title="YouTube video" allowfullscreen></iframe>
+    </div>
+
+  <div class="container" id="post1">
+    <h2>Post 2: Apa itu Attribute, Entitas, dan Relasi dalam ERD?</h2>
+    <p>Dalam <em>Entity Relationship Diagram (ERD)</em>, ada tiga komponen utama yang digunakan untuk memodelkan data:</p>
+      <ul>
+        <li><strong>Atribut (Attribute)</strong> → Atribut adalah ciri atau informasi yang dimiliki entitas.  
+          <br>Contoh:</li>
+          <p>Produk → <strong>ID Produk, Nama Produk, Harga, Stok</strong></p> 
+          <p>Pelanggan → <strong>Pelanggan, Nama, Email, Alamat</strong></p>
+          <p>Pesanan → <strong>Pesanan, Tanggal Pesan, Total Harga</strong></p>
+        <li><strong>Entitas (Entity)</strong> → Entitas adalah objek nyata atau konsep yang datanya ingin disimpan.  
+          <br>Contoh di toko online : <em>Produk, Pelanggan, Pesanan.</em>.</li>
+          <p>Produk = barang yang dijual.</p> 
+          <p>Pelanggan = orang yang membeli.</p> 
+          <p>Pesanan = transaksi pembelian.</p>
+        <li><strong>Relasi (Relationship)</strong> → Relasi adalah hubungan antar entitas.  
+          <br>Contoh:</li>
+          <p>1. Pelanggan membuat Pesanan</p> 
+          <p>2. Pesanan berisi Produk</p> 
+      </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Blog Basis Data | <a href="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a></p>
+  </footer>
+
+</body>
+</html>
