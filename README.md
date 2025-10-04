@@ -144,7 +144,7 @@
   </nav>
 
     <div class="hero">
-        <iframe src="https://youtu.be/tM28WXQocxU?si=3sr1u7TeVmQ1inbX" 
+        <iframe src="https://www.youtube.com/embed/tM28WXQocxU?si=3sr1u7TeVmQ1inbX" 
       title="YouTube video" allowfullscreen></iframe>
     </div>
 
